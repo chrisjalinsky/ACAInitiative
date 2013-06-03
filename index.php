@@ -1,1 +1,1 @@
-<?php echo "Hello Everyone!"; ?> 
+<?php echo "Hello Everyone! African Community Development Initiative Coming Soon"; ?> 
