@@ -1,0 +1,136 @@
+.stripedLight(@color: #555, @angle: 45deg) {
+    background-color: @color;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.05)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.05)), color-stop(.75, rgba(255,255,255,.05)), color-stop(.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.05) 50%, rgba(255,255,255,.05) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.05) 50%, rgba(255,255,255,.05) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(@angle, rgba(255,255,255,.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.05) 50%, rgba(255,255,255,.05) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(@angle, rgba(255,255,255,.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.05) 50%, rgba(255,255,255,.05) 75%, transparent 75%, transparent);
+}
+
+.solid(@color: @grayLight) {
+	background-color: @color;
+}
+  
+.gradient {
+	#gradient > .horizontal(#fff, @grayLight);
+	
+	&.primary {
+		#gradient > .horizontal(@blue, @blueDark);
+	}
+	&.info {
+		#gradient > .horizontal(lighten(@blue,20%), @blue);
+	}
+	&.success {
+		#gradient > .horizontal(lighten(@green,20%), @green);
+	}
+	&.warning {
+		#gradient > .horizontal(@yellow, @orange);
+	}
+	&.danger {
+		#gradient > .horizontal(@red, @purple);
+	}
+	&.inverse {
+		#gradient > .horizontal(@gray, @grayDarker);
+	}
+	&.radial {
+		#gradient > .radial(@white, @grayLight);
+		&.primary {
+			#gradient > .radial(@blue, @blueDark);
+	
+		}
+		&.info {
+			#gradient > .radial(lighten(@blue,20%), @blue);
+	
+		}
+		&.danger {
+			#gradient > .radial(@red, @purple);
+	
+		}
+		&.warning {
+			#gradient > .radial(@yellow, @orange);
+	
+		}
+		&.success {
+			#gradient > .radial(@green, darken(@green,20%));
+	
+		}
+		&.inverse {
+			#gradient > .radial(#333, #111);
+	
+		}
+	}
+}
+.translucent {
+	#translucent > .background(@grayLight, 0.5);
+	
+	&.primary {
+		#translucent > .background(@blueDark, 0.5);
+
+	}
+	&.info {
+		#translucent > .background(@blue, 0.5);
+
+	}
+	&.danger {
+		#translucent > .background(@red, 0.5);
+
+	}
+	&.warning {
+		#translucent > .background(@orange, 0.5);
+
+	}
+	&.success {
+		#translucent > .background(@green, 0.5);
+
+	}
+	&.inverse {
+		#translucent > .background(@black, 0.5);
+
+	}
+}
+.bkgd {
+	.solid(@grayLight);
+	
+	&.primary {
+		.solid(@blueDark);
+	}
+	&.info {
+		.solid(@blue);
+	}
+	&.success {
+		.solid(@green);
+	}
+	&.warning {
+		.solid(@orange);
+	}
+	&.danger {
+		.solid(@red);
+	}
+	&.inverse {
+		.solid(@grayDarker);
+	}
+	
+	&.striped {
+		.stripedLight(@grayLight,45deg);
+		
+		&.primary {
+			
+			.stripedLight(@blueDark,45deg);
+		}
+		&.info {
+			.stripedLight(@blue,45deg);
+		}
+		&.success {
+			.stripedLight(@green,45deg);
+		}
+		&.warning {
+			.stripedLight(@orange,45deg);
+		}
+		&.danger {
+			.stripedLight(@red,45deg);
+		}
+		&.inverse {
+			.stripedLight(@grayDark,45deg);
+		}
+	}
+}
