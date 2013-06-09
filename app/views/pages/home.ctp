@@ -1,4 +1,4 @@
-<?php //$this->layout = 'default';?>
+<?php $no_fluid_layout = false; ?>
 <style>
 	div#transition-container {
 		margin:0;
@@ -45,40 +45,37 @@
 	
 </style>
 <div class="row-fluid">
-<div id="centerHolder" class="background-transition">
-	<div id="transitionContainer" class="container-fluid">
-		<div id="passage" class="container-fluid" style="position:fixed;top:240px;width:100%;z-index:2;">
-			<div class="row-fluid">
-				<h1 class="title" style="letter-spacing:5px;margin:0;padding:0;height:80px;font-size:80px;line-height:80px;width:100%;text-align:center;color:#222;">AFRI<span style="color:#a34153;">CAN</span></h1>
-				<p class="subtitle" style="margin:0 0 20px 0;padding:0;height:22px;font-size:19px;line-height:22px;width:100%;text-align:center;color:#222;">Community Advancement Initiative</p>
-			</div><!--.row-fluid-->
+	<div id="centerHolder" class="background-transition">
+		<div id="transitionContainer" class="container-fluid">
+			<div id="passage" class="container-fluid" style="position:fixed;top:240px;width:100%;z-index:2;">
+				<div class="row-fluid">
+					<h1 class="title" style="letter-spacing:5px;margin:0;padding:0;height:80px;font-size:80px;line-height:80px;width:100%;text-align:center;color:#222;">AFRI<span style="color:#a34153;">CAN</span></h1>
+					<p class="subtitle" style="margin:0 0 20px 0;padding:0;height:22px;font-size:19px;line-height:22px;width:100%;text-align:center;color:#222;">Community Advancement Initiative</p>
+				</div><!--.row-fluid-->
+				
+				<div id="button" class="row-fluid" style="z-index:2;">
+	
+							<div class="span4 offset4">
+								<div class="row-fluid">
+									<div class="span12">
+										<a href="/acai/" class="btn btn-danger btn-block"><i class="icon icon-question-sign icon-white"></i>&nbsp;&nbsp;Learn More</a>
+									</div><!--.span6-->
+								</div><!--.row-fluid-->
+							</div><!--.span6-->
+	
+				</div><!--.row-fluid-->
+			</div><!--.container-fluid-->
 			
-			<div id="button" class="row-fluid" style="z-index:2;">
-
-						<div class="span4 offset4">
-							<div class="row-fluid">
-								<div class="span6">
-									<a href="#" class="btn btn-danger btn-block"><i class="icon icon-search icon-white"></i>&nbsp;&nbsp;Learn More</a>
-								</div><!--.span4-->
-								<div class="span6">
-									<a href="#" class="btn btn-warning btn-block"><i class="icon icon-search icon-white"></i>&nbsp;&nbsp;Join</a>
-								</div><!--.span4-->
-							</div><!--.row-fluid-->
-						</div><!--.span6-->
-
-			</div><!--.row-fluid-->
-		</div><!--.container-fluid-->
-		
-		<div class="fixed" style="position:fixed;top:70px;width:100%;z-index:1;">
-			<div class="outer-center">
-				<div class="inner-center">
-					
-					<img id="africa" style="height:100%;width:auto;" src="/img/africa-white.png" alt="Africa" title="Africa"/>
-				</div><!--.inner-center-->
-			</div><!--.outer-center-->
-		</div><!--.fixed-->
-	</div><!--#transitionContainer-->
-</div><!--#centerHolder-->
+			<div class="fixed" style="position:fixed;top:70px;width:100%;z-index:1;">
+				<div class="outer-center">
+					<div class="inner-center">
+						
+						<img id="africa" style="height:100%;width:auto;" src="/img/africa-white.png" alt="Africa" title="Africa"/>
+					</div><!--.inner-center-->
+				</div><!--.outer-center-->
+			</div><!--.fixed-->
+		</div><!--#transitionContainer-->
+	</div><!--#centerHolder-->
 </div><!--.rf-->
 
 <script type="text/javascript">

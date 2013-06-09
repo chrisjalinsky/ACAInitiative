@@ -26,19 +26,10 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        
-        <?php //fluid unless otherwise stated
-		if (!isset($no_fluid_layout) || ! $no_fluid_layout){
-			e('<div class="container-fluid">');
-		} else {
-			e('<div class="container">');
-		}
+
 		
-		if(isset($this->Session)) e($this->Session->flash());
+		<?php echo $content_for_layout; ?>
 		
-		echo $content_for_layout; ?>
-		
-		</div><!--.container-fluid or container depending on if $no_fluid_layout-->
 		
 		<!-- scripts_for_layout -->
 		<?php echo $scripts_for_layout; ?>
@@ -51,7 +42,4 @@
 	if (class_exists('JsHelper') && method_exists($this->Js, 'writeBuffer')) echo $this->Js->writeBuffer();
 	// Writes cached scripts
 	?>
-	<link href='http://fonts.googleapis.com/css?family=Share:400,400italic,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
 </html>
