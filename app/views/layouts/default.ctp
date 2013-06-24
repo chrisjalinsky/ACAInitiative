@@ -16,6 +16,7 @@
         <meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<script src="/js/vendor/jquery-1.9.1.min.js"type="text/javascript"></script>
 		<script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
 		<script src="/js/vendor/bootstrap.min.js" type="text/javascript"></script>

@@ -12,13 +12,13 @@
 		-o-transition: all 3s ease-in;
 		transition: all 3s ease-in;
 		background-color:rgba(255,255,255,1);
-		-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 5, 0, 0.0);
-		box-shadow: inset 0px 0px 0px 0px rgba(0, 5, 0, 0.0);
+		-webkit-box-shadow: inset 0px 0px 0px 0px rgba(67, 64, 97, 0.0);
+		box-shadow: inset 0px 0px 0px 0px rgba(67, 64, 97, 0.0);
 	}
 	.background-transition.on{
-		background-color:rgba(235,237,230,1);
-		-webkit-box-shadow: inset 0px 0px 100px 0px rgba(0, 5, 0, 0.3);
-		box-shadow: inset 0px 0px 100px 0px rgba(0, 5, 0, 0.3);
+		background-color:rgba(227,242,247,1);
+		-webkit-box-shadow: inset 0px 0px 100px 0px rgba(67, 64, 97, 0.7);
+		box-shadow: inset 0px 0px 100px 0px rgba(67, 64, 97, 0.7);
 	}
 	.outer-center {
 		float:right;
@@ -49,19 +49,23 @@
 		<div id="transitionContainer" class="container-fluid">
 			<div id="passage" class="container-fluid" style="position:fixed;top:240px;width:100%;z-index:2;">
 				<div class="row-fluid">
-					<h1 class="title" style="letter-spacing:5px;margin:0;padding:0;height:80px;font-size:80px;line-height:80px;width:100%;text-align:center;color:#222;">AFRI<span style="color:#a34153;">CAN</span></h1>
-					<p class="subtitle" style="margin:0 0 20px 0;padding:0;height:22px;font-size:19px;line-height:22px;width:100%;text-align:center;color:#222;">Community Advancement Initiative</p>
+					<h1 class="title" style="font-family:'Lato';letter-spacing:5px;margin:0;padding:0;height:80px;font-size:80px;line-height:80px;width:100%;text-align:center;color:#434061;">AFRICAN</span></h1>
+					<p class="subtitle" style="font-family:'Lato';margin:0 0 10px 0;padding:0;height:22px;font-size:19px;line-height:22px;width:100%;text-align:center;color:#2E6DBC;letter-spacing:1px;">Community&nbsp;<span style="color:#4EBEE6;">Advancement&nbsp;</span><span style="color:#49D168;">Initiative</span></p>
 				</div><!--.row-fluid-->
 				
 				<div id="button" class="row-fluid" style="z-index:2;">
-	
+					
 							<div class="span4 offset4">
-								<div class="row-fluid">
-									<div class="span12">
-										<a href="/acai/" class="btn btn-danger btn-block"><i class="icon icon-question-sign icon-white"></i>&nbsp;&nbsp;Learn More</a>
-									</div><!--.span6-->
-								</div><!--.row-fluid-->
-							</div><!--.span6-->
+								<div class="outer-center">
+									<div class="inner-center">
+										<div class="btn-group">
+												<a href="/acai/" class="btn btn-info"><i class="icon icon-question-sign icon-white"></i>&nbsp;&nbsp;Learn More</a>
+												<a href="/acai/fundraising/" class="btn btn-success"><i class="icon icon-ok icon-white"></i>&nbsp;&nbsp;Support Africa</a>
+											
+										</div><!--.btn-group-->
+									</div><!--.inner-center-->
+								</div><!--.outer-center-->
+							</div><!--.span4-->
 	
 				</div><!--.row-fluid-->
 			</div><!--.container-fluid-->
